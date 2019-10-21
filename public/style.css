@@ -1,0 +1,87 @@
+body {
+  margin: 1em;
+  color: #444; }
+
+p {
+  line-height: 1.4em; }
+
+a {
+  color: #cf5219;
+  position: relative; }
+  a:before {
+    z-index: -1;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    float: left;
+    padding: 10px 2px 10px 2px;
+    height: 4px;
+    width: 100%;
+    content: '';
+    -webkit-transition: background-color 0.25s;
+    -moz-transition: background-color 0.25s;
+    -ms-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
+    transition: background-color 0.25s; }
+  a:after {
+    background: url(img/external-link.svg) no-repeat;
+    padding: 5px;
+    background-size: 100%;
+    content: '';
+    top: 9px;
+    position: relative;
+    margin-left: 4px; }
+  a:hover {
+    color: #ffffff;
+    text-decoration: none; }
+    a:hover:before {
+      background-color: #cf5219; }
+    a:hover:after {
+      background: url(img/external-link-hover.svg) no-repeat; }
+
+ul {
+  font-size: 1.2em;
+  list-style-image: url(img/custom-bullets.svg);
+  line-height: 1.2em;
+  font-family: sans-serif;
+  font-weight: 100; }
+  ul li {
+    margin-bottom: 0.5em; }
+
+.search-field form {
+  display: inline-flex;
+  border: 1px solid #ccc;
+  border-radius: 20px; }
+
+.search-field [type='search'] {
+  border: none;
+  background: transparent;
+  padding: 10px; }
+  .search-field [type='search']:focus {
+    outline: none; }
+  .search-field [type='search']::placeholder {
+    color: #0c998d;
+    font-style: italic; }
+  .search-field [type='search']:-ms-input-placeholder {
+    color: #0c998d;
+    font-style: italic; }
+  .search-field [type='search']::-ms-input-placeholder {
+    color: #0c998d;
+    font-style: italic; }
+
+.search-field button {
+  background: url(img/search.svg) no-repeat center;
+  background-size: 40%;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  padding: 20px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  -ms-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s; }
+  .search-field button:hover {
+    background: url(img/search-hover.svg) no-repeat center;
+    background-size: 40%;
+    background-color: #0c998d; }

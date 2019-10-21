@@ -1,9 +1,11 @@
 ul {
   font-size: 1.2em;
-  list-style-image: url(img/custom-bullets.svg);
   line-height: 1.2em;
   font-family: sans-serif;
   font-weight: 100;
+  @supports (transform-box: fill-box) {
+    list-style-image: url(img/custom-bullets.svg);
+  }
 
   li {
     margin-bottom: 0.5em;

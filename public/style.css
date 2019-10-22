@@ -46,10 +46,8 @@ ul {
   font-size: 1.2em;
   line-height: 1.2em;
   font-family: sans-serif;
-  font-weight: 100; }
-  @supports (transform-box: fill-box) {
-    ul {
-      list-style-image: url(img/custom-bullets.svg); } }
+  font-weight: 100;
+  list-style-image: url(img/custom-bullets.svg); }
   ul li {
     margin-bottom: 0.5em; }
 
